@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+DOTFILES=$(cd $(DIRNAME "${BASH_SOURCE[0]}") && pwd)
+
+
+rm -rf $HOME/.oh-my-zsh
+ln -sf $DOTFILES/oh-my-zsh $HOME/.oh-my-zsh
+
+rm -rf $HOME/.tmux.conf
+ln -sf $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
+
+ln -sf $DOTFILES/git/gitignore_global $HOME/.gitignore_global
+
+mkdir -p $HOME/.local/bin
+
+ln -sf $DOTFILES/scripts/t $HOME/.local/bin/t
+
+rm -rf $HOME/.config/nvim
+ln -sf $DOTFILES/nvim $HOME/.config/nvim
+
+rm -rf $HOME/.mackup.cfg
+ln -s $DOTFILES/mackup/mackup.cfg $HOME/.mackup.cfg
