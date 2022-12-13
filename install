@@ -2,10 +2,6 @@
 
 DOTFILES=$(cd $(DIRNAME "${BASH_SOURCE[0]}") && pwd)
 
-
-rm -rf $HOME/.oh-my-zsh
-ln -sf $DOTFILES/oh-my-zsh $HOME/.oh-my-zsh
-
 rm -rf $HOME/.tmux.conf
 ln -sf $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
 
