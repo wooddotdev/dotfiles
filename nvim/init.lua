@@ -1,1 +1,1 @@
-/Users/Adam/Library/Mobile Documents/com~apple~CloudDocs/Mackup/.config/nvim/init.lua
+require('user.options')
