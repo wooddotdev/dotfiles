@@ -16,3 +16,6 @@ ln -sf $DOTFILES/nvim $HOME/.config/nvim
 
 rm -rf $HOME/.mackup.cfg
 ln -s $DOTFILES/mackup/mackup.cfg $HOME/.mackup.cfg
+
+rm -rf $HOME/.oh-my-zsh/.oh-my-zsh
+ln -s $DOTFILES/oh-my-zsh $HOME/.oh-my-zsh/.oh-my-zsh
